@@ -125,7 +125,7 @@
             },
 
 			"sources" : {
-				"/home/ec2-user/" : { "Fn::Join" : ["", ["https://s3.amazonaws.com/stelligentlabs/puppet.tar.gz"]]}
+				"/home/ec2-user/" : { "Fn::Join" : ["", ["https://s3.amazonaws.com/ditcndo/puppet.tar.gz"]]}
 			},
 
 			"files" : {

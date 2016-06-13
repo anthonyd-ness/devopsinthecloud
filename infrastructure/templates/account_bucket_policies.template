@@ -7,7 +7,7 @@
 	"PublicBucket" : {
 	  "Description" : "Public S3 bucket for storing artifacts",
       "Type" : "String",
-      "Default" : "stelligentlabs",
+      "Default" : "ditcndo",
       "ConstraintDescription" : "Must be a valid S3 Bucket"
 	}
   },

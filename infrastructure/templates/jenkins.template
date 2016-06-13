@@ -161,35 +161,35 @@
 		      },
 
 		      "/usr/share/tomcat6/scripts/aws/sqs_receive_message.rb" : {
-			  	"source" : { "Fn::Join" : ["", ["https://s3.amazonaws.com/stelligentlabs/scripts/aws/sqs_receive_message.rb"]]},
+			  	"source" : { "Fn::Join" : ["", ["https://s3.amazonaws.com/ditcndo/scripts/aws/sqs_receive_message.rb"]]},
 		        "mode"   : "000500",
 		        "owner"  : "tomcat",
 		        "group"  : "tomcat"
 		      },
 
 			  "/usr/share/tomcat6/scripts/aws/sqs_send_message.rb" : {
-				"source" : { "Fn::Join" : ["", ["https://s3.amazonaws.com/stelligentlabs/scripts/aws/sqs_send_message.rb"]]},
+				"source" : { "Fn::Join" : ["", ["https://s3.amazonaws.com/ditcndo/scripts/aws/sqs_send_message.rb"]]},
 		        "mode"   : "000500",
 		        "owner"  : "tomcat",
 		        "group"  : "tomcat"
 		      },
 
 			  "/usr/share/tomcat6/scripts/aws/terminate.rb" : {
-		        "source" : { "Fn::Join" : ["", ["https://s3.amazonaws.com/stelligentlabs/scripts/aws/terminate.rb"]]},
+		        "source" : { "Fn::Join" : ["", ["https://s3.amazonaws.com/ditcndo/scripts/aws/terminate.rb"]]},
 		        "mode"   : "000500",
 		        "owner"  : "tomcat",
 		        "group"  : "tomcat"
 		      },
 
 		  	  "/usr/share/tomcat6/scripts/aws/create_config_domain.rb" : {
-		        "source" : { "Fn::Join" : ["", ["https://s3.amazonaws.com/stelligentlabs/scripts/aws/create_config_domain.rb"]]},
+		        "source" : { "Fn::Join" : ["", ["https://s3.amazonaws.com/ditcndo/scripts/aws/create_config_domain.rb"]]},
 		        "mode"   : "000500",
 		        "owner"  : "tomcat",
 		        "group"  : "tomcat"
 		      },
 
 			  "/usr/share/tomcat6/scripts/aws/showback_domain.rb" : {
-		        "source" : { "Fn::Join" : ["", ["https://s3.amazonaws.com/stelligentlabs/scripts/aws/showback_domain.rb"]]},
+		        "source" : { "Fn::Join" : ["", ["https://s3.amazonaws.com/ditcndo/scripts/aws/showback_domain.rb"]]},
 		        "mode"   : "000500",
 		        "owner"  : "tomcat",
 		        "group"  : "tomcat"
@@ -212,7 +212,7 @@
 	          },
 
 			  "/etc/cron.hourly/jenkins_versioning.sh" : {
-				"source" : { "Fn::Join" : ["", ["https://s3.amazonaws.com/stelligentlabs/scripts/jenkins/jenkins_versioning.sh"]]},
+				"source" : { "Fn::Join" : ["", ["https://s3.amazonaws.com/ditcndo/scripts/jenkins/jenkins_versioning.sh"]]},
 		        "mode"   : "000500",
 		        "owner"  : "tomcat",
 		        "group"  : "tomcat"
@@ -267,10 +267,10 @@
 
 		  "# Update Jenkins with versioned configuration\n",
 		  "rm -rf /usr/share/tomcat6/.jenkins\n",
-		  "git clone git@github.com:stelligent/devopsinthecloudjenkins.git /usr/share/tomcat6/.jenkins\n",
+		  "git clone git@github.com:anthonyd-ness/devopsinthecloudjenkins.git /usr/share/tomcat6/.jenkins\n",
 
 		  "# Installing Ruby 1.9.3 from RPM\n",
-		  "wget https://s3.amazonaws.com/stelligentlabs/resources/rpm/ruby-1.9.3p0-2.amzn1.x86_64.rpm\n",
+		  "wget https://s3.amazonaws.com/ditcndo/resources/rpm/ruby-1.9.3p0-2.amzn1.x86_64.rpm\n",
 		  "rpm -Uvh ruby-1.9.3p0-2.amzn1.x86_64.rpm\n",
 
 		  "# Install Jenkins Plugins\n",
@@ -310,7 +310,7 @@
 		  "echo \"AWS_CLOUDFORMATION_HOME=/opt/aws/apitools/cfn/\" >> /etc/sysconfig/tomcat6\n",
 
 		  "# Add CloudFormation CLI tools\n",
-		  "wget -P /opt/aws/apitools/ https://s3.amazonaws.com/stelligentlabs/resources/aws_cli/CloudFormation-CLI.tar.gz\n",
+		  "wget -P /opt/aws/apitools/ https://s3.amazonaws.com/ditcndo/resources/aws_cli/CloudFormation-CLI.tar.gz\n",
 		  "tar -C /opt/aws/apitools/ -xf /opt/aws/apitools/CloudFormation-CLI.tar.gz\n",
 
 		  "# Setup deployment directory\n",
