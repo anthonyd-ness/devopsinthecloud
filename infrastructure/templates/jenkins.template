@@ -17,21 +17,21 @@
     "InstanceType" : {
       "Description" : "WebServer EC2 instance type",
       "Type" : "String",
-      "Default" : "m3.xlarge",
+      "Default" : "t2.micro",
       "ConstraintDescription" : "Must be a valid EC2 instance type."
     },
 
 	"PrivateBucket" : {
       "Description" : "S3 bucket for storing credentials",
       "Type" : "String",
-      "Default" : "stelligentlabs-private",
+      "Default" : "ditcndocreds",
       "ConstraintDescription" : "Must be a valid S3 Bucket"
     },
 
 	"PublicBucket" : {
 	  "Description" : "S3 bucket for storing build artifacts",
       "Type" : "String",
-      "Default" : "stelligentlabs",
+      "Default" : "ditcndoartifacts",
       "ConstraintDescription" : "Must be a valid S3 Bucket"
 	}
   },
