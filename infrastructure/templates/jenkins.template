@@ -267,7 +267,7 @@
 
 		  "# Update Jenkins with versioned configuration\n",
 		  "rm -rf /usr/share/tomcat6/.jenkins\n",
-		  "git clone git@github.com:anthonyd-ness/devopsinthecloud.git /usr/share/tomcat6/.jenkins\n",
+		  "git clone git@github.com:anthonyd-ness/devopsinthecloudjenkins.git /usr/share/tomcat6/.jenkins\n",
 
 		  "# Installing Ruby 1.9.3 from RPM\n",
 		  "wget https://s3.amazonaws.com/ditcndo/resources/rpm/ruby-1.9.3p0-2.amzn1.x86_64.rpm\n",
