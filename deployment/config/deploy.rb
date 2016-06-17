@@ -47,7 +47,7 @@ namespace :deploy do
   end
   
   task :bundle_install do
-    run "cd #{deploy_to} && bundle install"
+    run "cd #{deploy_to} && bundle install  --path vendor/cache"
   end
   
   task :db_migrate do
